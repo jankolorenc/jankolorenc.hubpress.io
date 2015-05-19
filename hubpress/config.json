@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "jankolorenc",
-    "repositoryName": "jankolorenc.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"jankolorenc","repositoryName":"jankolorenc.github.io","branch":"master"},"site":{"title":"Jan Kolorenc's blog","url":"https://jankolorenc.github.io"},"socialnetwork":{},"theme":{"name":"Casper","url":"//jankolorenc.github.io/themes/Casper"}}
