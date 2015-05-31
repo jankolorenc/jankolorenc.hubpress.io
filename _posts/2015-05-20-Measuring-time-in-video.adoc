@@ -1,5 +1,4 @@
-= Post test
+= Measuring time in video
 
-First post test
+Sometimes it is necessary to measure timein captured video from first selected image to another.
 
-Bla lba
