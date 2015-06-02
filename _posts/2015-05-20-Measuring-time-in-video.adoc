@@ -7,7 +7,7 @@ image::trampoline_jumping.gif[title="Measuring air time", alt="Measuring air tim
 
 Sometimes measuring device does not work or air time judge doesn't start the device in right time. Jumping is recorded by video camera for later protest. When the air time measuring device doesn't give result, air time has to be measured from the recorded video.
 
-Video was recorded using USB web camera connected to laptop, that encoded the video. Time measure from video was significantly shorter than time measured by air time measuring device. The problem was in laptop used as video encoder.
+Video was recorded using USB web camera connected to PC, that encoded the video. Time measure from video was significantly shorter than time measured by air time measuring device. The problem was in PC used as video encoder.
 
 I created application that helps to measure time in video clip and made it available to download and try.
 
@@ -15,22 +15,24 @@ To make problem clear, next chapter describe video recording.
 
 == Video recording
 
-Video is recorded by taking pictures in regular interval. Number of pictures taken in second is called frames per second (FPS). The FPS information is stored together with captured pictures and video player uses FPS information to determine time when to show next picture. When video recorder doesn't keep FPS as promised, time in video is damaged and there is no way to identify the problem.
-[image capturing image, FPS fail]
+Video is recorded by taking pictures in regular interval. Number of pictures taken in second is called frames per second (FPS). The FPS information is stored together with captured pictures and video player uses FPS information to determine time when to show next picture. When video recorder doesn't keep FPS as promised, time in video is damaged and there is no way to identify the problem from video.
+[[img-damaged_fps]]
+image::damaged_fps.png[title="Damaged time in video", alt="Damaged time in video"]
+Figure <<img-damaged_fps>> show video damaged by inaccurate FPS on recorder side. First line is ideal required case when recorder keeps promissed FPS. In second line, that cause shorter video duration in player. In the third line recorder takes pictures faster than promised FPS and video in player seems to be longer.
 
-== Video encoding on laptop
+== Video encoding on PC
 
-As stated in previous chapter, it is necessary to keep FPS as precise as possible. Today's laptop include powerful processors that can encode video clip in shorter time than the clip lasts. Laptops run multitasking operating systems like MS Windows. There are several tasks running on laptop in the same time. Like video encoding, anti virus check, windows update, ... Try to run task manager to see running processes when laptop "does nothing". All running tasks share single processor or few processor cores. Operating system pretends that all tasks are running simultaneously by switching between them. Running task receive processor for a while and then the processor is provided to another task. Common operating systems does not guarantee time interval when the task receives processor again.
+As stated in previous chapter, it is necessary to keep FPS as precise as possible. Today's PC include powerful processors that can encode video clip in shorter time than the clip lasts. PCs run multitasking operating systems like MS Windows. There are several tasks running on PC in the same time. Like video encoding, anti virus check, windows update, ... Try to run task manager to see running processes when PC "does nothing". All running tasks share single processor or few processor cores. Operating system pretends that all tasks are running simultaneously by switching between them. Running task receive processor for a while and then the processor is provided to another task. Common operating systems does not guarantee time interval when the task receives processor again.
 
 So it is hard to keep FPS on common operating system and encode live video even for powerful processors. This was our problem. Video encoder didn't keep FPS and time in video was skewed.
 
-There are real time operating system that guarantee maximal time interval when the task receives processor again, but hey are not commonly installed on laptops.
+There are real time operating system that guarantee maximal time interval when the task receives processor again, but hey are not commonly installed on PCs.
 
 Video recorder can encode live video without problem, because it does recording only.
 
 == Take time from video
 
-There is an application that can easily display time for each picture in recorded video clip and allowed easily to measure time. The problem was the application required AVI container. I saw the application for a while, I don't know name or creator. Hardware video recorders does not produce required AVI container so software video encoder running on laptop was used. There was idea to re-code video from video recorders to AVI container required by the measuring application, but video transcoders reduced FPS so time measuring was less precise. 
+There is an application that can easily display time for each picture in recorded video clip and allowed easily to measure time. The problem was the application required AVI container. I saw the application for a while, I don't know name or creator. Hardware video recorders does not produce required AVI container so software video encoder running on PC was used. There was idea to re-code video from video recorders to AVI container required by the measuring application, but video transcoders reduced FPS so time measuring was less precise. 
 
 I decided to write similar time measuring application that can handle video clips directly from video recorders.
 
