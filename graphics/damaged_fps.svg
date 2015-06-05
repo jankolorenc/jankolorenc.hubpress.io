@@ -129,7 +129,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.36769553"
      inkscape:cx="989.92709"
-     inkscape:cy="766.82419"
+     inkscape:cy="925.69536"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -146,7 +146,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -160,14 +160,20 @@
        x="422.48254"
        y="-528.37231"
        id="text5120"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
+       inkscape:export-xdpi="24.11215"
+       inkscape:export-ydpi="24.11215"><tspan
          sodipodi:role="line"
          id="tspan5122"
          x="422.48254"
          y="-528.37231">Recorder</tspan></text>
     <g
        id="g4941"
-       transform="translate(-5.4392329,10.878593)">
+       transform="translate(-5.4392329,10.878593)"
+       inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
+       inkscape:export-xdpi="24.11215"
+       inkscape:export-ydpi="24.11215">
       <g
          transform="translate(95.805239,1347.8191)"
          id="g4815">
@@ -1000,7 +1006,10 @@
        x="449.94958"
        y="818.7265"
        id="text5124"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
+       inkscape:export-xdpi="24.11215"
+       inkscape:export-ydpi="24.11215"><tspan
          sodipodi:role="line"
          id="tspan5126"
          x="449.94958"
@@ -1009,10 +1018,16 @@
        style="fill:none;stroke:#000000;stroke-width:26.70000076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Send)"
        d="m 545.47811,607.81086 0,100"
        id="path5375"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
+       inkscape:export-xdpi="24.11215"
+       inkscape:export-ydpi="24.11215" />
     <g
        id="g5066"
-       transform="translate(0,2.2941831)">
+       transform="translate(0,2.2941831)"
+       inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
+       inkscape:export-xdpi="24.11215"
+       inkscape:export-ydpi="24.11215">
       <g
          transform="translate(266.52485,-10.878566)"
          id="g4689">
