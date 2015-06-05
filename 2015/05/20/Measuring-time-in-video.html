@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Measuring time in video</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//jankolorenc.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jankolorenc.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html" />
+    
+    <meta property="og:site_name" content="Jan Kolorenc blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Measuring time in video" />
+    <meta property="og:description" content="Air time There are situations where it is necessary to measure time in video. It was during trampoline jumping event. Jump air time is normally measured by photo diode positioned under bounce mat. Jumper crosses the infra red beam after..." />
+    <meta property="og:url" content="https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html" />
+    <meta property="article:published_time" content="2015-05-19T22:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-06-05T21:49:14.701Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Measuring time in video" />
+    <meta name="twitter:description" content="Air time There are situations where it is necessary to measure time in video. It was during trampoline jumping event. Jump air time is normally measured by photo diode positioned under bounce mat. Jumper crosses the infra red beam after..." />
+    <meta name="twitter:url" content="https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Jan Kolorenc blog",
+    "author": {
+        "@type": "Person",
+        "image": "https://avatars.githubusercontent.com/u/9655896?v=3",
+        "url": "undefined/author/undefined"
+    },
+    "headline": "Measuring time in video",
+    "url": "https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html",
+    "datePublished": "2015-05-19T22:00:00.000Z",
+    "dateModified": "2015-06-05T21:49:14.701Z",
+    "description": "Air time There are situations where it is necessary to measure time in video. It was during trampoline jumping event. Jump air time is normally measured by photo diode positioned under bounce mat. Jumper crosses the infra red beam after..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Jan Kolorenc blog" href="https://jankolorenc.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://jankolorenc.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://jankolorenc.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Measuring time in video</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-05-20">20 May 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="sect1">
+<h2 id="_air_time">Air time</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are situations where it is necessary to measure time in video. It was during trampoline jumping event.
+Jump air time is normally measured by photo diode positioned under bounce mat. Jumper crosses the infra red beam after landing till next bounce. Air time judge has to start measuring device just before the first move.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/trampoline_jumping.gif" alt="Measuring air time">
+</div>
+<div class="title">Figure 1. Measuring air time</div>
+</div>
+<div class="paragraph">
+<p>Sometimes measuring device didn&#8217;t work or air time judge didn&#8217;t start the device in the right time. Jumping routines had been recorded for possible later protests. When the air time measuring device didn&#8217;t give result, the air time had to be measured from the recorded video.</p>
+</div>
+<div class="paragraph">
+<p>Video was recorded using USB web camera and encoded on PC. We found that time measured from video was significantly shorter than time measured by air time measuring device. The problem was in PC used as video encoder.</p>
+</div>
+<div class="paragraph">
+<p>To clarify the problem, next chapter describe important video recording aspects.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_video_recording">Video recording</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Video is recorded by taking pictures in regular interval. Number of pictures taken in second is called frames per second (FPS). The FPS information is stored together with captured pictures and video player uses FPS information to determine time when to show next picture. When video recorder doesn&#8217;t keep declared FPS, time in video is damaged and there is no way to identify and correct the problem from video itself.</p>
+</div>
+<div id="img-damaged_fps" class="imageblock">
+<div class="content">
+<img src="/images/damaged_fps.png" alt="Damaged time in video">
+</div>
+<div class="title">Figure 2. Damaged time in video</div>
+</div>
+<div class="paragraph">
+<p>Figure <a href="#img-damaged_fps">Damaged time in video</a> show video time damages caused by inaccurate FPS on recorder side. First line is ideal case when recorder keeps declared FPS and player show pictures in the right time. In the second line, video recorder take pictures later than declared. This causes shorter video duration in player. In the third line recorder takes pictures faster than declared FPS and video in player seems to be longer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_video_recording_on_pc">Video recording on PC</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As demonstrated in previous chapter, it is necessary to keep FPS as precise as possible. Today&#8217;s PC include powerful processors that can encode video clip in shorter time than the clip lasts. PCs run multitasking operating systems like MS Windows. There are several tasks running on PC in the same time like video encoding, anti virus check, windows update, &#8230;&#8203; Try to run task manager to see running processes when PC "does nothing". All running tasks share single processor or few processor cores. Operating system pretends that all tasks are running simultaneously by switching between them in short intervals. Running task receive processor for a while and then the processor is provided to another task. Ordinary multitasking operating systems don&#8217;t guarantee time when the task receives processor again.</p>
+</div>
+<div class="paragraph">
+<p>So it is hard to keep FPS on ordinary multitasking operating system and encode live video even for powerful processors. This was our problem. Video recorder didn&#8217;t keep FPS and the video time was skewed. There are real time operating systems that guarantee maximal time interval when the task receives processor again, but hey are not commonly installed on PCs.</p>
+</div>
+<div class="paragraph">
+<p>Camcorders can record and encode live video without problem, because they do the recording only using specialized hardware.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_taking_time_from_video">Taking time from video</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is an application that can display time for each picture (frame) in video clip and allow easily measure time. The problem was the application required AVI container. Camcorders don&#8217;t produce required AVI container. Video from camcorders was transcoded to AVI container required by the measuring application, but the transcoders reduced FPS so time measuring was less precise. Transcoding significantly slowed work.</p>
+</div>
+<div class="paragraph">
+<p>I decided to create similar time measuring application that can handle video clips directly from camcorders. The application is ready to <a href="https://github.com/jankolorenc/VideoTimeMeasure/releases">download</a> and try.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_application_requirements">Application requirements</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>GUI application to measure several time intervals in video clip.</p>
+</li>
+<li>
+<p>User marks begin and end pictures of intervals. Application shows total time as sum of measured intervals.</p>
+</li>
+<li>
+<p>Save interval borders for later inspection.</p>
+</li>
+<li>
+<p>Handle as much as possible video formats generated by camcorders.</p>
+</li>
+<li>
+<p>Allow to move in video picture by picture forward and backward.</p>
+</li>
+<li>
+<p>Use available libraries to reduce development time.</p>
+</li>
+<li>
+<p>GUI design inspired by existing application.</p>
+</li>
+<li>
+<p>Multiplatform at least for Windows and Linux (nice to have).</p>
+</li>
+<li>
+<p>Use case:</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Record video clips on camcorders recording to SD cards. The more FPS the more precise measurement.</p>
+</li>
+<li>
+<p>In case of air time measuring problem, remove SD card from camcorder and insert another.</p>
+</li>
+<li>
+<p>Measure time from video on removed SD card.</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_selected_libraries_and_programming_language">Selected libraries and programming language</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>FFMpeg - nice video library that can natively handle large amount of video format. Allows to move forward and backward in video.</p>
+</li>
+<li>
+<p>QT library - nice multiplatform GUI library with designer.</p>
+</li>
+<li>
+<p>C/C++ to glue FFMpeg with QT.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There are wrappers over FFMpeg and QT for higher level languages, but rather incomplete, so backward moving picture by picture is difficult.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_decoding_pictures_using_ffmpeg_library">Decoding pictures using FFMpeg library</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Video periodically contain complete pictures called I-frames. Other pictures between I-frames are stored as "difference" to previous I-frame (P-frames) and next I-frame (B-frames). When decoding required frame, jump to nearest previous I-frame and decode sequentially until required picture is reached. Going sequentially backwards is not natively possible.</p>
+</div>
+<div class="paragraph">
+<p>Jumping is in time units that makes harder to estimate jump length. Number of I-frames per time unit (GOP) is not always available. Several tries to reach nearest I-frame is sometimes necessary. FFMpeg assign presentation timestamp to each picture and automatically decodes all pictures necessary to show required picture when going forward. Pictures are not always stored in the same order as they are captured.</p>
+</div>
+<div class="paragraph">
+<p>Decoded pictures are saved into buffer to reduce jumping when going several pictures backward. The buffer takes some RAM.</p>
+</div>
+<div class="paragraph">
+<p>Thanks for nice <a href="https://github.com/chelyaev/ffmpeg-tutorial">FFMpeg tutorial</a>.</p>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/9655896?v=3)"><span class="hidden">'s Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href=""></a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Measuring%20time%20in%20video&amp;url=https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://jankolorenc.github.io">Jan Kolorenc blog</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//jankolorenc.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//jankolorenc.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
