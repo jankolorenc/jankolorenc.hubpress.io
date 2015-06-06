@@ -1,6 +1,6 @@
 = Measuring time in video
 
-Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded.
+Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded. Improper recording can make video useless.
 
 == Air time
 In trampoline jumping, air time is a part of final score.
