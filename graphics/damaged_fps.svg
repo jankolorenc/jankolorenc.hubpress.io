@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="damaged_fps.svg"
-   inkscape:export-filename="/home/kolik/jankolorenc.github.io/graphics/fps.png"
+   inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
    inkscape:export-xdpi="38.758301"
    inkscape:export-ydpi="38.758301">
   <defs
@@ -119,6 +119,20 @@
          offset="1"
          id="stop4056" />
     </linearGradient>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5408-9"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -127,9 +141,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.36769553"
-     inkscape:cx="989.92709"
-     inkscape:cy="925.69536"
+     inkscape:zoom="0.26"
+     inkscape:cx="140.42231"
+     inkscape:cy="156.24496"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -157,7 +171,7 @@
     <text
        xml:space="preserve"
        style="font-size:48px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="422.48254"
+       x="386.76294"
        y="-528.37231"
        id="text5120"
        sodipodi:linespacing="125%"
@@ -166,16 +180,13 @@
        inkscape:export-ydpi="24.11215"><tspan
          sodipodi:role="line"
          id="tspan5122"
-         x="422.48254"
+         x="386.76294"
          y="-528.37231">Recorder</tspan></text>
     <g
-       id="g4941"
-       transform="translate(-5.4392329,10.878593)"
-       inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
-       inkscape:export-xdpi="24.11215"
-       inkscape:export-ydpi="24.11215">
+       id="g4843"
+       transform="translate(2.7196378,0)">
       <g
-         transform="translate(95.805239,1347.8191)"
+         transform="translate(24.366003,1358.6977)"
          id="g4815">
         <g
            id="g3978-0"
@@ -450,7 +461,7 @@
         </g>
       </g>
       <g
-         transform="translate(37.55933,0)"
+         transform="translate(-0.87990939,10.878593)"
          id="g4899">
         <g
            transform="translate(307.76811,659.17291)"
@@ -725,7 +736,7 @@
         </g>
       </g>
       <g
-         transform="translate(1.3263522,0)"
+         transform="translate(-4.1129171,10.878593)"
          id="g4857">
         <g
            transform="translate(629.78981,659.17291)"
@@ -1003,7 +1014,7 @@
     <text
        xml:space="preserve"
        style="font-size:48px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="449.94958"
+       x="419.66919"
        y="818.7265"
        id="text5124"
        sodipodi:linespacing="125%"
@@ -1012,24 +1023,21 @@
        inkscape:export-ydpi="24.11215"><tspan
          sodipodi:role="line"
          id="tspan5126"
-         x="449.94958"
+         x="419.66919"
          y="818.7265">Player</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:26.70000076;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Send)"
-       d="m 545.47811,607.81086 0,100"
+       d="m 496.5917,607.81086 0,100"
        id="path5375"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
        inkscape:export-xdpi="24.11215"
        inkscape:export-ydpi="24.11215" />
     <g
-       id="g5066"
-       transform="translate(0,2.2941831)"
-       inkscape:export-filename="/home/kolik/jankolorenc.github.io/images/damaged_fps.png"
-       inkscape:export-xdpi="24.11215"
-       inkscape:export-ydpi="24.11215">
+       id="g4718"
+       transform="translate(-2.7196178,0)">
       <g
-         transform="translate(266.52485,-10.878566)"
+         transform="translate(200.52485,-8.5843829)"
          id="g4689">
         <g
            id="g3978"
@@ -1304,7 +1312,7 @@
         </g>
       </g>
       <g
-         transform="translate(18.005625,-3.517846)"
+         transform="translate(-14.994375,-1.2236629)"
          id="g4731">
         <g
            transform="translate(327.32181,-685.12835)"
@@ -1579,7 +1587,7 @@
         </g>
       </g>
       <g
-         transform="translate(-339.95521,21.710304)"
+         transform="translate(-339.95521,24.004487)"
          id="g4773">
         <g
            transform="translate(971.07138,-710.3565)"
@@ -1854,5 +1862,45 @@
         </g>
       </g>
     </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
+       d="m 1047.062,-429.36963 0,919.73685"
+       id="path3263"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1096.0155"
+       y="23.296209"
+       id="text3265"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3267"
+         x="1096.0155"
+         y="23.296209">Recording</tspan><tspan
+         sodipodi:role="line"
+         x="1096.0155"
+         y="73.296211"
+         id="tspan3269">different FPS</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
+       d="m 1047.062,947.32033 0,639.11567"
+       id="path3263-9"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1096.0155"
+       y="1259.6755"
+       id="text3265-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3267-5"
+         x="1096.0155"
+         y="1259.6755">Playing</tspan><tspan
+         sodipodi:role="line"
+         x="1096.0155"
+         y="1309.6755"
+         id="tspan3269-0">same FPS</tspan></text>
   </g>
 </svg>
