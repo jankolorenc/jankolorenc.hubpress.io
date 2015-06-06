@@ -2,6 +2,7 @@
 :hp-tags: Video, Time
 
 Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded. Improper recording can make video useless.
+This article explain problems with recording video on ordinary PC and describe application for measuring time in video. The application is ready to https://github.com/jankolorenc/VideoTimeMeasure/releases[download] and try.
 
 == Air time
 In trampoline jumping, air time is a part of final score.
@@ -31,7 +32,7 @@ Camcorders can record and encode live video without problem, because they do the
 == Taking time from video
 There is an application that can display time for each picture (frame) in video clip and allow easily measure time. The problem was the application required AVI container. Camcorders don't produce required AVI container. Video from camcorders was transcoded to AVI container required by the measuring application, but the transcoders reduced FPS so time measuring was less precise. Transcoding significantly slowed work.
 
-I decided to create similar time measuring application that can handle video clips directly from camcorders. The application is ready to https://github.com/jankolorenc/VideoTimeMeasure/releases[download] and try.
+I decided to create similar time measuring application that can handle video clips directly from camcorders.
 
 == Application requirements
  - GUI application to measure several time intervals in video clip.
