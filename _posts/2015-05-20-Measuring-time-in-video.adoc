@@ -1,7 +1,8 @@
 = Measuring time in video
+Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded.
 
 == Air time
-There are situations where it is necessary to measure time in video. It was during trampoline jumping event.
+In trampoline jumping, air time is a part of final score.
 Jump air time is normally measured by photo diode positioned under bounce mat. Jumper crosses the infra red beam after landing till next bounce. Air time judge has to start measuring device just before the first move.
 
 image::trampoline_jumping.gif[title="Measuring air time", alt="Measuring air time"]
