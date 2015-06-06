@@ -52,7 +52,7 @@ I decided to create similar time measuring application that can handle video cli
 There are wrappers over FFMpeg and QT for higher level languages, but rather incomplete, so backward moving picture by picture is difficult.
 
 == Decoding pictures using FFMpeg library
-Video periodically contain complete pictures called I-frames. Other pictures between I-frames are stored as "difference" to previous I-frame (P-frames) and next I-frame (B-frames). When decoding required frame, jump to nearest previous I-frame and decode sequentially until required picture is reached. Going sequentially backwards is not natively possible.
+Video periodically contain complete pictures called I-frames. Other pictures between I-frames are stored as ``difference'' to previous I-frame (P-frames) and next I-frame (B-frames). When decoding required frame, jump to nearest previous I-frame and decode sequentially until required picture is reached. Going sequentially backwards is not natively possible.
 
 Jumping is in time units that makes harder to estimate jump length. Number of I-frames per time unit (GOP) is not always available. Several tries to reach nearest I-frame is sometimes necessary. FFMpeg assign presentation timestamp to each picture and automatically decodes all pictures necessary to show required picture when going forward. Pictures are not always stored in the same order as they are captured.
 
