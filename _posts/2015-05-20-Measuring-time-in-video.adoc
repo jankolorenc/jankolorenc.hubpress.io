@@ -25,7 +25,7 @@ Figure <<img-damaged_fps>> show video time damages caused by inaccurate FPS on r
 == Video recording on PC
 As demonstrated in previous chapter, it is necessary to keep FPS as precise as possible. Today's PC include powerful processors that can encode video clip in shorter time than the clip lasts. PCs run multitasking operating systems like MS Windows. There are several tasks running on PC in the same time like video encoding, anti virus check, windows update, ... Try to run task manager to see running processes when PC "does nothing". All running tasks share single processor or few processor cores. Operating system pretends that all tasks are running simultaneously by switching between them in short intervals. Running task receive processor for a while and then the processor is provided to another task. Ordinary multitasking operating systems don't guarantee time when the task receives processor again.
 
-So it is hard to keep FPS on ordinary multitasking operating system and encode live video even for powerful processors. This was our problem. Video recorder didn't keep FPS and the video time was skewed. There are real time operating systems that guarantee maximal time interval when the task receives processor again, but hey are not commonly installed on PCs.
+So it is hard to keep FPS on ordinary multitasking operating system and encode live video even for powerful processors. This was our problem. Video recorder didn't keep FPS and the video time was skewed. There are real time operating systems that guarantee maximal time interval when the task receives processor again, but they are not commonly installed on PCs.
 
 Camcorders can record and encode live video without problem, because they do the recording only using specialized hardware.
 
@@ -47,7 +47,9 @@ I decided to create similar time measuring application that can handle video cli
    . Record video clips on camcorders recording to SD cards. The more FPS the more precise measurement.
    . In case of air time measuring problem, remove SD card from camcorder and insert another.
    . Measure time from video on removed SD card.
-   
+
+*Following text goes deeper into application architecture and it is hidden to end user.*
+
 == Selected libraries and programming language
  - FFMpeg - nice video library that can natively handle large amount of video format. Allows to move forward and backward in video.
  - QT library - nice multiplatform GUI library with designer.

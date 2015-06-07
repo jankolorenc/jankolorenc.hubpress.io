@@ -23,7 +23,7 @@
     <meta property="og:description" content="Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded. Improper recording can make video useless. This article explain problems with recording video on ordinary PC and describe..." />
     <meta property="og:url" content="https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html" />
     <meta property="article:published_time" content="2015-05-19T22:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-06-06T07:42:33.238Z" />
+    <meta property="article:modified_time" content="2015-06-07T14:08:59.446Z" />
     <meta property="article:tag" content="Video" />
     <meta property="article:tag" content="Time" />
     
@@ -45,7 +45,7 @@
     "headline": "Measuring time in video",
     "url": "https://jankolorenc.github.io/2015/05/20/Measuring-time-in-video.html",
     "datePublished": "2015-05-19T22:00:00.000Z",
-    "dateModified": "2015-06-06T07:42:33.238Z",
+    "dateModified": "2015-06-07T14:08:59.446Z",
     "keywords": "Video,  Time",
     "description": "Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded. Improper recording can make video useless. This article explain problems with recording video on ordinary PC and describe..."
 }
@@ -124,7 +124,7 @@ Jump air time is normally measured by photo diode positioned under bounce mat. J
 <p>As demonstrated in previous chapter, it is necessary to keep FPS as precise as possible. Today&#8217;s PC include powerful processors that can encode video clip in shorter time than the clip lasts. PCs run multitasking operating systems like MS Windows. There are several tasks running on PC in the same time like video encoding, anti virus check, windows update, &#8230;&#8203; Try to run task manager to see running processes when PC "does nothing". All running tasks share single processor or few processor cores. Operating system pretends that all tasks are running simultaneously by switching between them in short intervals. Running task receive processor for a while and then the processor is provided to another task. Ordinary multitasking operating systems don&#8217;t guarantee time when the task receives processor again.</p>
 </div>
 <div class="paragraph">
-<p>So it is hard to keep FPS on ordinary multitasking operating system and encode live video even for powerful processors. This was our problem. Video recorder didn&#8217;t keep FPS and the video time was skewed. There are real time operating systems that guarantee maximal time interval when the task receives processor again, but hey are not commonly installed on PCs.</p>
+<p>So it is hard to keep FPS on ordinary multitasking operating system and encode live video even for powerful processors. This was our problem. Video recorder didn&#8217;t keep FPS and the video time was skewed. There are real time operating systems that guarantee maximal time interval when the task receives processor again, but they are not commonly installed on PCs.</p>
 </div>
 <div class="paragraph">
 <p>Camcorders can record and encode live video without problem, because they do the recording only using specialized hardware.</p>
@@ -188,6 +188,9 @@ Jump air time is normally measured by photo diode positioned under bounce mat. J
 </div>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><strong>Following text goes deeper into application architecture and it is hidden to end user.</strong></p>
 </div>
 </div>
 </div>
@@ -272,6 +275,22 @@ Jump air time is normally measured by photo diode positioned under bounce mat. J
         </footer>
 
 
+
+
+    <section class="post-comments">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      var disqus_shortname = 'jankolorencblog'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
 
 
     </article>
