@@ -48,7 +48,7 @@ I decided to create similar time measuring application that can handle video cli
    . In case of air time measuring problem, remove SD card from camcorder and insert another.
    . Measure time from video on removed SD card.
 
-Following text goes deeply into application architecture and it is hidden to end user.
+*Following text goes deeply into application architecture and it is hidden to end user.*
 
 == Selected libraries and programming language
  - FFMpeg - nice video library that can natively handle large amount of video format. Allows to move forward and backward in video.
