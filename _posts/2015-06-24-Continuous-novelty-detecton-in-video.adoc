@@ -1,1 +1,3 @@
-= Online anomaly detection in video
+= Continuous novelty detecton in video
+
+Detecting new situations in video
