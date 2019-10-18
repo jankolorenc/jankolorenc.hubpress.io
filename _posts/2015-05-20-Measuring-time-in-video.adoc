@@ -4,6 +4,8 @@
 Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded. Improper recording can make video useless.
 This article explain problems with recording video on ordinary PC and describe application for measuring time in video. The application is ready to https://github.com/jankolorenc/VideoTimeMeasure/releases[download] and try.
 
+Updated https://github.com/jankolorenc/VideoTimeMeasure/blob/master/exported_scripts/Trampoline%20synchronous%202017%20example.zip[synchronous trampoline script] according to rules since 2017
+
 == Air time
 In trampoline jumping, air time is a part of final score.
 Jump air time is normally measured by photo diode positioned under bounce mat. Jumper crosses the infra red beam after landing till next bounce. Air time is sum of intervals when the beam is not crossed. Judge has to start measuring device just before the first move.
