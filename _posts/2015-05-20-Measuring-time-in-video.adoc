@@ -4,6 +4,7 @@
 Measuring time from video is easy with suitable application, but special care has to be taken to how the video is recorded. Improper recording can make video useless.
 This article explain problems with recording video on ordinary PC and describe application for measuring time in video. The application is ready to https://github.com/jankolorenc/VideoTimeMeasure/releases[download] and try.
 
+
 Updated https://github.com/jankolorenc/VideoTimeMeasure/blob/master/exported_scripts/Trampoline%20synchronous%202017%20example.zip[synchronous trampoline script] according to rules since 2017
 
 == Air time
